@@ -1,0 +1,22 @@
+# Multi-Agent Research System - runtime dependencies
+# Install with:  pip install -r requirements.txt
+#
+# The lower bounds are the exact versions this project was built and verified against
+# (CPython 3.13).  Upper bounds keep a future major release from breaking the build.
+
+# --- LLM integration (LangChain + OpenAI GPT-4o-mini) ---
+langchain-core>=1.6.9,<2
+langchain-openai>=1.7.0,<2
+openai>=3.28.0,<4
+
+# --- Web search + page retrieval ---
+tavily-python>=0.8.5,<1
+requests>=2.34.2,<3
+beautifulsoup4>=4.15.0,<5
+
+# --- Structured validation + configuration ---
+pydantic>=2.14.0,<3
+python-dotenv>=1.2.4,<2
+
+# --- User interface ---
+streamlit>=1.65.0,<2
